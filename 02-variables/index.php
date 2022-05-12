@@ -28,4 +28,17 @@ $b =7;
 $a *= $b;
 
 echo $a;
+// creer 2 variables prix ht et tva 
+//afficher le calcul du prix ttc
+
+
+ //calculer l'age d'une personne en renseignant son annee de naissance ,utilier la fonction  date .
+
+
+$dn = 2022;
+$dn= $dn +8/12;
+$age = (date("y") +date("m")/12)-$dn;
+echo "\ntest:", $dn, " age:", $age, "\n";
+echo "Age",(int)$age;
+
 ?>
