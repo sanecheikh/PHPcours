@@ -38,5 +38,32 @@ echo '<pre>';
   $tab3 = array_merge($tableau2,$tableau,$notes);
   //assembler les tableaux
   var_dump($tab3);
-  echo '</pre>';
+  //for($i= 0 ,$i<count($tableau2);$i++){
+    //echo $tableau2[$i].'<br>';
+
+  //} 
+   $fruits = [ 'banane','kiwi','pomme', 'poire'];
+   $html = '';
+    
+    for ( $i =0 ; $i<count($fruits);$i++){
+      $html .= $fruits[$i].'<.>';
+    }
+    echo $html;
+    foreach( $fruits as $value)
+    //foreach( $fruits as $value)
+    {
+      echo $value .'<br>';
+    }
+    //construire un tableau $nombre  a l'aide la boucle for contenant des nombres de 34 a 78 
+     $tab =array();
+    //$tab[]=34 
+    
+     for ($i =0 ;$i<43;$i++) {
+        array_push($tab,$i+34);
+     } 
+     var_dump($tab);
+
+     echo
+      '</pre>'
+    
 ?>
