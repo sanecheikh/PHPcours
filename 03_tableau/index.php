@@ -55,15 +55,54 @@ echo '<pre>';
       echo $value .'<br>';
     }
     //construire un tableau $nombre  a l'aide la boucle for contenant des nombres de 34 a 78 
-     $tab =array();
+     $nombres =array();
     //$tab[]=34 
     
-     for ($i =0 ;$i<43;$i++) {
-        array_push($tab,$i+34);
+     for ($i =34 ;$i<78;$i++) {
+        array_push($nombres,$i);
      } 
-     var_dump($tab);
+     
+     //tableau associatif 
+     $fruits = ['banane '=> 'jaune','pomme'=>'rouge', 'kiwi'=>'vert'];
+     print_r($fruits);
+     //echo 'la couleur d une Pomme est' .$fruits['rouge'];
+     echo 'La longueur du tableau $fruits est de :'.sizeof($fruits);
 
-     echo
+    $ages = [ 'Muchel' =>34 , 'Lucie'=> 12 ,' Mouloud '=>56];
+    print_r($ages);
+    $chaine =implode('.',$ages);
+    //transformer une chaine de caractere en un tableau en prcisant de limiter;
+    // assemble les valeurs du tableaux en chaine de caractere;
+    echo $chaine;
+    echo'</br>';
+     $ages['paul'] =22 ;
+     //ajouter nouvel element au tableau  $age ;
+     $ages['Lucie'] = 02;
+     //modifiacation du tableau $age;
+      print_r($ages);
+      foreach($ages as $clef =>$valeur)
+       // echo $clef . 'a' .$valeur .'ans<br>';
+     // }
+     $html = '<ul>';
+     foreach($ages as $key =>$value){
+       $html .= '<li>' .$key .'a'  .$value .'ans</li>';
+     }
+     $html .='</ul>';
+     echo $html;
+     // Creer un tableau $notes avec un prenom => une note
+// Afficher une liste ul des eleves et leur notes
+// Marc a obtenu 15/20
+$not = [ 'Marc' =>15];
+    print_r($not);
+    $html = '<ul>';
+     foreach($not as $key =>$value){
+       $html .= '<li>la note de physique ' .$key .' est  '  .$value .'/20</li>';
+     }
+     $html .='</ul>';
+     echo $html;
+
+     
+ echo
       '</pre>'
     
 ?>
