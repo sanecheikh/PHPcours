@@ -92,7 +92,9 @@ echo '<pre>';
      // Creer un tableau $notes avec un prenom => une note
 // Afficher une liste ul des eleves et leur notes
 // Marc a obtenu 15/20
-$not = [ 'Marc' =>15];
+$not = ['Marc' =>15,
+       ' Ptrick' =>12,
+      'Paul' => 10];
     print_r($not);
     $html = '<ul>';
      foreach($not as $key =>$value){
@@ -100,8 +102,74 @@ $not = [ 'Marc' =>15];
      }
      $html .='</ul>';
      echo $html;
+     $tab4 = array_merge($ages,$not);
+     print_r($tab4);
+     $planetes = ['mars','terre','pluiton','venus','jupiter'];
+     print_r($not);
+     asort($planetes);
+     echo '<hr>';
+     //asort($planetes); //tri des valeurs d'un tableau par ordre croissan
+      // asort($notes); 
+// rsort($notes); // tri tableau par ordre decroissant
+// ksort($notes); // tri tableau en fonction des clefs par ordre croissant
+// arsort($notes); // tri tableau en fonction des valeurs par ordre decroissant
+// krsort($notes); // tri en fonction des clefs par ordre decroissant
 
-     
+// print_r($planetes);
+// print_r($notes);
+
+// Créer un tableau avec les mois de l'annnée
+// - afficher la valeur de la 5 ligne de ce tableau
+// - afficher la vleur de l'index 10
+// - modifier le mois d'avril en le mettant en majuscule
+
+// Créer un tableau associatif des departements de la region normandie
+// avec le nom du departement en valeur et son code postale en index
+// - afficher la valeur de l'index 27
+// - ajouter le departement et code postale de la ville de Brest
+// - parcourir le tableau des departements et afficher chaque departement dans un parapraphe p de la façon suivante :
+// Le 'nom du departement' possede le code postale suivant :  'code pastale'
+
+
+$mois = ['janvier ','fevrier','mars','avril','mai','juin', 'juillet','aout','septembre','octobre', 'novembre','decembre'];
+print_r($mois);
+echo 'la 5 ligne de ce tableau  est : '.$mois[4] .'</br>';
+echo 'la valeur de l\'index 10 est : ' .$mois[10] .'</br>';
+
+
+
+ echo '<hr>';
+  
+ $departements = [14=>'Calvados', 76=>'seine maritime ',61=>'Orn', 50=>'Manche ',27 => 'Eure',];
+ print_r($departements);
+echo '<hr>';
+echo 'la valeur de l\'index 27est : ' .$departements[27] .'</br>';
+//$departements[29]= 'finister';
+$departements +=[29=>'finister'];
+echo '<hr>';
+print_r($departements);
+echo '<hr>';
+foreach($departements as $key => $value)
+    {
+      echo '<p>' .ucfirst($value) .'possede le code postale suivant :'. $key .'<p>';
+    }
+$tab = [ 
+  'voiture' => 'ford' ,
+  'nombre '=> [ 1,2,3,4],
+  'planete' => ['mars' ,'terre']
+];
+$tab = [];
+$tab [] =['A','B','C'];  
+$tab [] = ['Q','R','T'];  
+$tab [] =['E','U','P','I']; 
+print_r($tab);
+echo '<hr>';
+//echo $tab['planete'][0];
+//Ecrire le mot CEPPIC 
+
+  echo $tab[0][2].$tab[2][0].$tab[2][2].$tab[2][2].$tab[2][3].$tab[0][2];
+ 
+
  echo
       '</pre>'
     
