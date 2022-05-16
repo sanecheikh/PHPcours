@@ -128,6 +128,9 @@ if($c1!==10){
         echo "il n'a pas articles !";
 
     }
-
-      
+    // operateur ternaire 
+    // condition ? true :false
+    echo !empty($articles[0]) ? $articles[0]: "il n' y pas d'articles";
+   $premierArticle=  !empty($articles[0]) ? $articles[0]: "il n' y pas d'articles";
+      echo $premierArticle;
     ?>
