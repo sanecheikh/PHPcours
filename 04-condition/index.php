@@ -46,6 +46,7 @@ if ($heure<=12){
     }else {
         echo "c'est le soir ,il est $heure !";
     };
+    echo '<hr>';
 // avec la  condition if /else afficher si on est le matin  l'apres midi ou le soir 
 $a = 20;
 $b = 5 ;
@@ -64,6 +65,7 @@ $c2 ='10';
 if($c1!==10){
     echo 'Test !==';
 }
+echo '<hr>';
    // ===============
    // swich /case
    //================
@@ -88,6 +90,7 @@ if($c1!==10){
        
        
     };
+    echo '<hr>';
     $food ='cake';
     $return_value = match($food)
     {
@@ -97,6 +100,7 @@ if($c1!==10){
     
     
     };
+    echo '<hr>';
     //var_dump($return_value);
     
     
@@ -120,7 +124,7 @@ if($c1!==10){
    // faire une condition sur ce tableau :tester l'article a l'index 0 si il est non vide , sinon 
     //afficher 'il n'y a pas d'article '
     //creer une branche article ,que vous fusionnerez avec main losrque l'exercice est finit.
-
+    echo '<hr>';
     if(!empty($articles[0])){
         echo $articles[0];
 
@@ -128,6 +132,7 @@ if($c1!==10){
         echo "il n'a pas articles !";
 
     }
+    echo '<hr>';
     // operateur ternaire 
     // condition ? true :false
     echo !empty($articles[0]) ? $articles[0]: "il n' y pas d'articles";
