@@ -121,12 +121,12 @@ if($c1!==10){
     //afficher 'il n'y a pas d'article '
     //creer une branche article ,que vous fusionnerez avec main losrque l'exercice est finit.
 
-    if(ema($articles[0])){
+    if(!empty($articles[0])){
         echo $articles[0];
 
     }else{
         echo "il n'a pas articles !";
-        
+
     }
 
       
