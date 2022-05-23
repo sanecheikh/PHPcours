@@ -14,6 +14,6 @@ Travail-01 :
 | 11 | 51.8 |
  */
 
-$temperature[];
-$temperature[] ='25'
-$temperature
+
+
+

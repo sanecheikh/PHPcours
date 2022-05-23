@@ -28,7 +28,16 @@ etc ...
 
  }
   
-  
+  $array= array(27,15,34,379,248,5643,81,211,999,142,300,572);
+  print_r($array);
+  for ($i=0; $i <count($tabl) ; $i++){
+     if ($array[$i]%2 ==0){
+     echo $array[$i] .'est paire <br>';
+   } else {
+      echo $array[$i] .'est impaire<br>';
+  }
+}
+
  
 ?>
  
