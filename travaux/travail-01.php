@@ -22,4 +22,43 @@ echo $tab1[$i].'<br>';
 
 }
 ;
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature</title>
+</head>
+<body>
+    <style>
+        
+table,th,td{
+border: 1px solid black;
+border-collapse: collapse;
+}
+th, td {
+  padding: 5px;
+  text-align: left}
 
+</style>
+<table>
+  <tr>
+    <td>0°C</td>
+    <td>25°</td>
+    <td>03°</td>
+    <td>35°</td>
+    <td>11°</td>
+  </tr>
+  <tr>
+  <td>0°F</td>
+    <td>77°</td>
+    <td>37.4°</td>
+    <td>95°</td>
+    <td>51.8°</td>
+</tr>
+
+</table>
+</body>
+</html>
